@@ -1,1 +1,1 @@
-"# lesson47-jquery-ajax-grid" 
+# lesson47-jquery-ajax-grid
