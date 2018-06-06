@@ -1,0 +1,12 @@
+https://en.wikipedia.org/wiki/Ajax_(programming)
+
+https://www.youtube.com/watch?v=y9MS8ImRUsQ&index=2&list=PLHvLPOPF4hVFKML_TTGLRcBXi819yG3V7
+
+https://www.youtube.com/watch?v=YxWMxJONp7E&list=PL4cUxeGkcC9jAhrjtZ9U93UMIhnCc44MH
+
+https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started
+
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest
+https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS

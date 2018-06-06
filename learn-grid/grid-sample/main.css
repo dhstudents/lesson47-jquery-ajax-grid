@@ -1,0 +1,99 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.item {
+    flex: 0 0 300px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    font-size: 48px;
+    color: silver;
+    text-transform: uppercase;
+}
+
+.item-1 {
+    background: url(images/happy_birthday.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.item-2 {
+    background-color: red;
+}
+
+.item-3 {
+    background-color: green;
+}
+
+.item-4 {
+    background-color: blue;
+}
+
+@media screen and (min-width: 576px) {
+    .container {
+        display: grid;
+        height: 100vh;
+        /* 1 */
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "one one two three three" "one one four five five" "six seven seven five five" "six eight nine nine ten"
+    }
+    /* 2 */
+    .item-1 {
+        /* 1a */
+        /* background-color: red; */
+        /* 2a */
+        background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(images/happy_birthday.gif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: black;
+        font-size: 100px;
+        grid-area: one;
+    }
+    .item-2 {
+        background-color: blue;
+        grid-area: two;
+    }
+    .item-3 {
+        background-color: green;
+        grid-area: three;
+    }
+    .item-4 {
+        background-color: yellow;
+        grid-area: four;
+    }
+    .item-5 {
+        background-color: aqua;
+        grid-area: five;
+    }
+    .item-6 {
+        background-color: chartreuse;
+        grid-area: six;
+    }
+    .item-7 {
+        background-color: chocolate;
+        grid-area: seven;
+    }
+    .item-8 {
+        background-color: coral;
+        grid-area: eight;
+    }
+    .item-9 {
+        background-color: cornflowerblue;
+        grid-area: nine;
+    }
+    .item-10 {
+        background-color: darkgoldenrod;
+        grid-area: ten;
+    }
+}
+

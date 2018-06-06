@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Effects with jQuery</title>
+    <style>
+    div {
+        border: 4px blue solid;
+        font-size: 2em;
+    }
+    </style>
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script>
+
+// $.get('https://restcountries.eu/rest/v2/capital/tallinn?fields=flag', function(data) {
+//     $("div").text(JSON.stringify(data));} , "json");
+
+
+// $.getJSON('https://restcountries.eu/rest/v2/capital/tallinn?fields=flag', function(data) {
+//     $.each(data , function(i , arrayElement) {
+//         $.each(arrayElement , function(i , value) {
+//             $('div').append($("<img>").attr('src' , value).width(150));
+//         });
+//     });
+// });
+
+
+// $("div").load('https://restcountries.eu/rest/v2/capital/tallinn?fields=flag');
+
+        $(document).ready(function () {
+        });
+    </script>
+</head>
+
+<body>
+    <!-- button#btn${text}*3 -->
+    <button id="btn1">$.get(url , cb  , type (json))</button>
+    <button id="btn2">$('div').load(url)</button>
+    <button id="btn3">$.getJSON(url , cb)</button>
+    <!-- <button id="btn4">Fade To</button> -->
+    <div>Hello</div>
+    <!-- <img src="https://restcountries.eu/data/est.svg"> -->
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+.sideNav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+a {
+    display: block;
+    transition: 0.5s;
+    padding: 10px;
+}
+
+.locate {
+    position: fixed;
+    top: 50%;
+    left: 0px;
+}
+
+.mrt-init {
+    margin-left: 0px;
+    transition: margin-left 0.5s;
+}
+
+.mrt-fade {
+    margin-left: 450px;
+    transition: margin-left 0.5s;
+}
+
+.floating-search{
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index:999;
+}

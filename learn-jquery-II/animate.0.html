@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- https://www.w3schools.com/jquery/jquery_animate.asp -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Effects with jQuery</title>
+    <style>
+    div {
+        background-color: red;
+        height: 100px;
+        width: 100px;
+    }
+    </style>
+    <script src="scripts/jquery-3.3.1.js"></script>
+    <script>
+        // $(selector).animate({params},speed,callback);
+        $(document).ready(function () {
+            $("#btn1").click(function () {
+                $("div").animate(
+                    {
+                        opacity: 0.5,
+                        height: '+=10px',
+                        width: '+=10px',
+                        fontSize: '+=1em'
+                    }
+                )
+            });
+
+
+            $("#btn2").click(function () {
+                $("div").slideDown();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <!-- button#btn${text}*3 -->
+    <button id="btn1">Animate</button>
+    <button id="btn2">Chaining</button>
+    <div>Hello</div>
+</body>
+
+</html>

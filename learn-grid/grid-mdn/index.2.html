@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_layout -->
+<!-- Guids -->
+<!-- Positioning items against lines -->
+<!-- Nesting grids -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning items against lines</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .wrapper {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 100px;
+            max-width: 940px;
+            margin: 0 auto;
+            border: 6px groove #f76707;
+            border-radius: 5px;
+            background-color: #fff4e6;
+            padding: 10px;
+            grid-column-gap: 10px;
+            grid-row-gap: 1em;
+        }
+
+        .box {
+            border: 2px solid #ffa94d;
+            border-radius: 5px;
+            background-color: #ffd8a8;
+            padding: 1em;
+            color: #d9480f;
+        }
+
+        .box1 {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .box2 {
+            grid-column-start: 1;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+
+        .wrapper>div {
+            border: 2px solid #ffa94d;
+            border-radius: 5px;
+            background-color: #ffd8a8;
+            padding: 1em;
+            color: #d9480f;
+        }
+
+        .nested {
+            border: 2px solid #ffec99;
+            border-radius: 5px;
+            background-color: #fff9db;
+            padding: 1em;
+        }
+
+        /* place the direct children in cells */
+    </style>
+</head>
+
+<body>
+    <!-- div.wrapper>div.some{text}*6 -->
+    <div class="wrapper">
+        <div class="box box1">
+            <div class="nested">a</div>
+            <div class="nested">b</div>
+            <div class="nested">c</div>
+        </div>
+        <div class="box box2">Two</div>
+        <div class="box box3">Three</div>
+        <div class="box box4">Four</div>
+        <div class="box box5">Five</div>
+        <!-- <div class="six">Six</div> -->
+    </div>
+</body>
+
+</html>
